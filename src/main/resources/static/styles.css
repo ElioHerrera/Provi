@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c2e4c3;
+    /* Otros estilos para el cuerpo del documento */
+}
+
+/* ---------- NAVEGACION ---------- */
+
+.navegacion {
+    display: flex; /* Utilizar flexbox */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+
+.navegacion h1 {
+    margin: 0; /* Eliminar el margen superior y inferior */
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: #2fff00;
+}
+
+.navegacion .vinculos {
+    text-align: right; /* Alinear los enlaces a la derecha */
+   
+}
+
+.navegacion a {
+    color: #fff; /* Color del texto de los enlaces */
+    margin-right: 20px; /* Agrega un margen derecho entre los enlaces */
+    text-decoration: none; /* Eliminar la subrayado de los enlaces */
+}
+
+.navegacion a:hover {
+    color: #2fff00; /* Cambiar el color al pasar el mouse sobre los enlaces */
+
+}
+
+/* ---------- INICIO DE SESIÓN ---------- */
+
+.ingreso-section {
+    padding-top: 30px; /* Añade espacio superior */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.formulario-container {
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.titulo-formulario {
+    text-align: center; /* Centra el texto */
+}
+
+.formulario {
+    margin-top: 20px; /* Añade espacio superior */
+}
+
+.input-container {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.formulario-label {
+    flex: 0 0 150px; /* Tamaño fijo para las etiquetas de los campos */
+    margin-bottom: 10px; /* Añade espacio inferior */
+    margin-right: 10px; /* Añade espacio derecho */
+}
+
+.formulario-input {
+    flex: 1; /* El campo de entrada ocupa el espacio restante */
+    min-width: 200px; /* Ancho mínimo del campo de entrada */
+    margin-bottom: 10px; /* Añade espacio inferior */
+}
+
+.boton-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Añade espacio superior */
+}
+
+.boton-ingresar {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+.boton-ingresar:hover {
+    background-color: #45a049; /* Nuevo color de fondo al pasar el ratón */
+}
+.registro-info{
+    padding-top:  10px; /* Añade espacio superior */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center; /* Centra el contenido del pie de página */
+}
+
+footer p {
+    font-size: 14px; /* Define el tamaño de fuente más pequeño */
+    color: #047509 !important; /* Define el color verde claro */
+}
+
+

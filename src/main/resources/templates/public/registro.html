@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- <script src="/js.js"></script> -->
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+<header>
+    <nav class="navegacion">
+        <h1>PROVI</h1>
+    </nav>
+</header>
+<main>
+    <section id="ingreso" class="ingreso-section">
+        <div class="formulario-container">
+            <h2 class="titulo-formulario">Crear Usuario</h2>
+            <form id="formularioRegistro" action="/registro/registrarUsuario" method="POST" class="formulario">
+                <div class="input-container">
+                    <label for="email" class="formulario-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="password" class="formulario-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" required class="formulario-input">
+                </div>
+
+                <div class="input-container">
+                    <label for="tipoUsuario" class="formulario-label">Tipo de Usuario:</label>
+                    <select id="tipoUsuario" name="tipoUsuario" required class="formulario-input">
+                        <option value="cliente">Cliente</option>
+                        <option value="proveedor">Proveedor</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="nombre" class="formulario-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="empresa" class="formulario-label">Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="rubro" class="formulario-label">Rubro:</label>
+                    <input type="text" id="rubro" name="rubro" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="direccion" class="formulario-label">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="numeroContacto" class="formulario-label">Número de contacto:</label>
+                    <input type="text" id="numeroContacto" name="numeroContacto" required class="formulario-input">
+                </div>
+                <div class="boton-container">
+                    <button type="submit" class="boton-ingresar">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Otros elementos de la página, como visualización de productos, pedidos, etc. -->
+</main>
+
+
+<footer>
+    <!-- Pie de página -->
+    <p>&copy; 2024 Provi &reg;. Todos los derechos reservados.</p>
+</footer>
+
+
+
+</body>
+
+</html>

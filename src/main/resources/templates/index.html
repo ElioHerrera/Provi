@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provi</title>
+    <!-- <script src="/js.js"></script> -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+<header>
+    <nav class="navegacion">
+        <h1>Bienvenido a PROVI</h1>
+        <div class="vinculos">
+            <p>
+                <a href="#">EMPRESA</a>
+                <a href="#">CONTACTO</a>
+            </p>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="ingreso" class="ingreso-section">
+        <div class="formulario-container">
+            <h2 class="titulo-formulario">Inicio de Sesión</h2>
+            <form id="formularioIngreso" action="/inicio" method="POST" class="formulario">
+                <div class="input-container">
+                    <label for="email" class="formulario-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required class="formulario-input">
+                </div>
+                <div class="input-container">
+                    <label for="password" class="formulario-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" required class="formulario-input">
+                </div>
+                <div class="boton-container">
+                    <button type="submit" class="boton-ingresar">Ingresar</button>
+                </div>
+            </form>
+
+            <div class="registro-info">
+                ¿No tienes una cuenta? <a href="/registro">Registrarse</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Otros elementos de la página, como visualización de productos, pedidos, etc. -->
+</main>
+
+<!-- MENSAJES-->
+<!-- Agrega esto en algún lugar del cuerpo de tu página -->
+<div th:if="${errorInicioSesion}">
+    <p>Error: Credenciales incorrectas. Inténtalo de nuevo.</p>
+</div>
+
+<div th:if="${registroExitoso}">
+    <p>Registro exitoso. Por favor, inicia sesión.</p>
+</div>
+
+
+<footer>
+
+
+    <!-- Pie de página -->
+    <p>&copy; 2024 Provi &reg;. Todos los derechos reservados.</p>
+</footer>
+
+
+</body>
+
+</html>

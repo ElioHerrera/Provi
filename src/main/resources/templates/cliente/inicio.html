@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Cliente</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Enlaza aquí tus archivos de estilos si es necesario -->
+</head>
+<body>
+<header>
+    <nav class="navegacion">
+        <h1>Bienvenido a PROVI <span th:text="${cliente.nombre}"/>.</h1>
+        <div class="vinculos">
+
+            <p>
+
+                <a href="#">PROVEEDORES</a>
+                <a href="#">PEDIDOS</a>
+            </p>
+        </div>
+    </nav>
+</header>
+<!-- Aquí va tu contenido -->
+<div>
+    <h1>Datos Personales</h1>
+    <p>Nombre: <span th:text="${cliente.nombre}"/> <br>
+        E-Mail: <span th:text="${cliente.email}"/> <br>
+        Nombre Empresa: <span th:text="${cliente.empresa}"/> <br>
+        Rubro: <span th:text="${cliente.rubro}"/> <br>
+        Direccion: <span th:text="${cliente.direccion}"/> <br>
+        Cel: <span th:text="${cliente.numeroContacto}"/></p>
+
+    <footer>
+
+
+        <!-- Pie de página -->
+        <p>&copy; 2024 Provi &reg;. Todos los derechos reservados.</p>
+    </footer>
+</div>
+</body>
+</html>
